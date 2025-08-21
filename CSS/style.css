@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(216, 193, 236);
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    float: left;
+}
+a{
+    display: block;
+    padding: 8px;
+    background-color: bisque;
+}
