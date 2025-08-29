@@ -7,42 +7,44 @@
         <title>Verah Mokaya Portfolio</title>
 </head>
 <body>
-    <script src="index.js"></script>
     <header>
         <h1>Verah Mokaya</h1>
         <p>Software Engineer | UI Designer | Digital Creator</p>
-        <button onclick="toggleTheme()">Toggle dark mode</button>
+        <button id="showOverlayBtn()">Show overlay</button>
     </header>
     
     <nav>
          <a href="#about">About</a>  
-         <a href="#projects">Projets</a>
+         <a href="#projects">Projects</a>
          <a href="#contact">Contact</a>
     </nav>
 
-    <section id="about">
+    <div id="about">
         <h2>About Me</h2>
         <p>I am a passionate web developer with unique UI designer skills, where I use <strong>Figma</strong> to turn the ideas into <em>real-world projet using user-friendly designs.</em></p>
         <p>Currently am studying <strong>Software Engineering</strong> at <strong>Moringa</strong>, where I intend to do <em>Full Stack Developer</em> and combine my <STrong>UI Design </STrong>skills to be outstanding in the job market.</p>
-    </section>
+    </div>
 
-    <section id="projects">
+    <div id="projects">
         <h2>Projects</h2>
         <ul>
             <li><strong>Portfolio Website:</strong> A personal site to showcase my work.</li>
             <li><strong>Daraja App:</strong> A mini.app section that shows all Safaricom mini apps designed and managed by Safaricom.</li>
     
         </ul>
-    </section>
+    </div>
 
-    <section id="contact">
+    <div id="contact">
         <h2>Contact Me</h2>
         <form id="contactForm">
             <input type="text" placeholder="Your Name" required><br>
-            <input type="email" placeholder="Your eEmail" required><br>
-            <textarea placeholder="Your message" required></textarea>
+            <input type="email" placeholder="Your Email" required><br>
+            <textarea placeholder="Your message" required></textarea><br>
         </form>
-    </section>
+    </div>
+
+        <script src="index.js"></script>
+
 
      <footer>
         <p> &copy; 2025 verah Mokaya. All rights reserved.</p>

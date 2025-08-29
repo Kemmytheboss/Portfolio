@@ -1,0 +1,37 @@
+/* styling header */
+header {
+  background-color: #6b1656ad;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+
+}
+
+/* styling footer */
+footer {
+  background-color: #6b1656ad;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+/* making footer to stick at the bottom */
+footer {
+  margin-top: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(240, 231, 220);
+}
+
+button{
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
