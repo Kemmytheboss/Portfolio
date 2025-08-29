@@ -62,3 +62,8 @@ button{
   display: block;
   margin: 1rem auto;
 }
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}

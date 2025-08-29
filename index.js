@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (toggleButton) {
         toggleButton.addEventListener("click", function () {
+            console.log("Toggle clicked")
             document.body.classList.toggle("dark-mode");
         });
     }
