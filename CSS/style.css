@@ -1,8 +1,6 @@
 body{
-    background-color: rgb(216, 193, 236);
-    text-align: center;
-    margin: auto;
-    width: 100%;
+    background: rgb(216, 193, 236);
+    
 }
 ul{
     list-style-type: none;
