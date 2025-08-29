@@ -3,10 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verah Mokaya Website</title>
-    <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="stylesheet" href="./CSS/style.css">
+        <title>Verah Mokaya Portfolio</title>
 </head>
 <body>
-    <div id="app"></div>
+    <script src="index.js"></script>
+    <header>
+        <h1>Verah Mokaya</h1>
+        <p>Software Engineer | UI Designer | Digital Creator</p>
+        <button onclick="toggleTheme()">Toggle dark mode</button>
+    </header>
+    
+    <nav>
+         <a href="#about">About</a>  
+         <a href="#projects">Projets</a>
+         <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate web developer with unique UI designer skills, where I use <strong>Figma</strong> to turn the ideas into <em>real-world projet using user-friendly designs.</em></p>
+        <p>Currently am studying <strong>Software Engineering</strong> at <strong>Moringa</strong>, where I intend to do <em>Full Stack Developer</em> and combine my <STrong>UI Design </STrong>skills to be outstanding in the job market.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Portfolio Website:</strong> A personal site to showcase my work.</li>
+            <li><strong>Daraja App:</strong> A mini.app section that shows all Safaricom mini apps designed and managed by Safaricom.</li>
+    
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="email" placeholder="Your eEmail" required><br>
+            <textarea placeholder="Your message" required></textarea>
+        </form>
+    </section>
+
+     <footer>
+        <p> &copy; 2025 verah Mokaya. All rights reserved.</p>
+     </footer>
 </body>
-</html>
+</html>    

@@ -1,3 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const app = document.getElementById("app")
+document.addEventListener("DOMContentLoaded", function(){
+    const toggleButton = document.getElementById("themeToggle");
+    const contactForm = document.getElementById("contactForm");
+
+//this event-listener toggles to dark mode when you click
+    toggleButton.addEventListener("click", function(){
+        document.body.classList.toggle("dark-mode");
+    });
+//contact form subimt event
+contactForm.addEventListener("submit", function(event){
+    event.preventDefault();
+    alert("Thanks for reaching out. I'll get back to you soon.")
+})
 })
