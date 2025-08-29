@@ -55,3 +55,10 @@ button{
 .nav a:hover {
   text-decoration: underline;
 }
+
+.profile-image img {
+  max-width: 400px;
+  border-radius: 50%;
+  display: block;
+  margin: 1rem auto;
+}
