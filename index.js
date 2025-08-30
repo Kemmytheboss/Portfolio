@@ -14,13 +14,23 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    if (contactForm) {
+     if (contactForm && formMessage) {
         contactForm.addEventListener("submit", function (event) {
-            event.preventDefault();
+            event.preventDefault(); // Prevents the form from reloading the page
 
-            // Hide the form and show a success message
-            contactForm.style.display = 'none';
-            formMessage.style.display = 'block';
+            // Check if all fields are filled
+            const name = document.querySelector("#name").value;
+            const email = document.querySelector("#email").value;
+            const message = document.querySelector("#message").value;
+
+            if (name && email && message) {
+                // If form is filled, show success message
+                formMessage.style.display = 'block'; // Show the success message
+            } else {
+                alert("Please fill in all fields.");
+            }
         });
+    } else {
+        console.log("Form or message element not found!");
     }
 });
