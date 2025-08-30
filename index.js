@@ -1,40 +1,52 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.querySelector("#themeToggle");
+document.addEventListener("DOMContentLoaded", () => {
+    const themeToggle = document.querySelector("#themeToggle");
     const contactForm = document.querySelector("#contactForm");
     const formMessage = document.querySelector("#formMessage");
+    const closeBtn = document.querySelector(".close-btn");
+    
+    const body = document.body;
 
-    console.log(contactForm, formMessage);
+    contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
 
-    if (toggleButton) {
-        toggleButton.addEventListener("click", function () {
-            console.log("Toggle clicked");
-            document.body.classList.toggle("dark-mode");
+        const name = document.querySelector("#name").value.trim();
+        const email = document.querySelector("#email").value.trim();
+        const message = document.querySelector("#message").value.trim();
 
-            const isDarkMode = document.body.classList.contains("dark-mode");
-            toggleButton.setAttribute("aria-pressed", isDarkMode);
-        });
-    }
+        if (name && email && message) {
+            // Show popup
+            formMessage.classList.add("show");
+            // Optional: reset form
+            contactForm.reset();
+        } else {
+            alert("Please fill in all fields.");
+        }
+    });
 
-     if (contactForm && formMessage) {
-        contactForm.addEventListener("submit", function (event) {
-            event.preventDefault(); 
+    // Close popup on "x"
+    closeBtn.addEventListener("click", () => {
+        formMessage.classList.remove("show");
+    });
 
-            const name = document.querySelector("#name").value;
-            const email = document.querySelector("#email").value;
-            const message = document.querySelector("#message").value;
+    // Close popup on outside click
+    formMessage.addEventListener("click", (e) => {
+        if (e.target === formMessage) {
+            formMessage.classList.remove("show");
+        }
+    });
 
-            console.log("Form submitted:", { name, email, message }); 
+    // Theme toggle
+    themeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark-theme");
+        body.classList.toggle("light-theme");
 
-            if (name && email && message) {
-                formMessage.style.display = 'block'; 
-
-                console.log("Form is complete, success message displayed!"); 
-            
-            } else {
-                alert("Please fill in all fields.");
-            }
-        });
-    } else {
-        console.log("Form or message element not found!");
-    }
+        // Change button text/icon
+        if (body.classList.contains("dark-theme")) {
+            themeToggle.textContent = "☀️ Light Mode";
+        } else {
+            themeToggle.textContent = "🌙 Dark Mode";
+        }
+    });
 });
+console.log("Form submitted");
+console.log("Theme toggled");
