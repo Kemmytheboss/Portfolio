@@ -24,17 +24,11 @@ footer {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height:100vh;
   font-family: sans-serif;
-  background-color: rgb(240, 231, 220);
+  background-color: #f0e7dc;
 }
 
-button{
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top: 20px;
-}
 
 .nav ul {
   list-style: none;
@@ -47,20 +41,13 @@ button{
 }
 
 .nav a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
 }
 
 .nav a:hover {
   text-decoration: underline;
-}
-
-.profile-image img {
-  max-width: 400px;
-  border-radius: 50%;
-  display: block;
-  margin: 1rem auto;
 }
 
 body.dark-mode {
@@ -81,4 +68,12 @@ body.dark-mode {
     margin-right: 50px; /* Space between image and text */
     max-width: 600px; /* Optional: Limit the image size */
     height: auto;
+    border-radius: 100%;
 }
+#contactForm input, #contactForm textarea, #contactForm button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;};
+
+    
