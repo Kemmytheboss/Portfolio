@@ -11,10 +11,7 @@
         <h1>Verah Mokaya</h1>
         <p>Software Engineer | UI Designer | Digital Creator</p>
         <button id="themeToggle">Toggle Theme</button>
-        
-    </header>
-    
-    <nav id="navbar" class="nav">
+        <nav id="navbar" class="nav">
         
         <ul>
             <li><a href="#about">About</a></li>
@@ -23,6 +20,10 @@
         </ul>
         
     </nav>
+        
+    </header>
+    
+    
 
     <div id="about" class="inline-container">
         <img src="./images/verah.jpeg" alt="Photo of Verah Mokaya">
@@ -53,8 +54,11 @@
         </form>
     </div>
 
-    <div id="formMessage">
-        <p>Thank you for contacting me! I’ll get back to you soon.</p>
+    <div id="formMessage" class="popup-overlay">
+        <div class="popup-box">
+            <span class="close-btn"> &times;</span>
+            <p>Thank you for contacting me! I’ll get back to you soon.</p>
+        </div>
     </div>
 
     <script src="index.js"></script>
