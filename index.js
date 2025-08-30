@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("Toggle clicked");
             document.body.classList.toggle("dark-mode");
 
-            // Update aria-pressed for accessibility
             const isDarkMode = document.body.classList.contains("dark-mode");
             toggleButton.setAttribute("aria-pressed", isDarkMode);
         });
@@ -18,9 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
      if (contactForm && formMessage) {
         contactForm.addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevents the form from reloading the page
+            event.preventDefault(); 
 
-            // Check if all fields are filled
             const name = document.querySelector("#name").value;
             const email = document.querySelector("#email").value;
             const message = document.querySelector("#message").value;
@@ -28,10 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("Form submitted:", { name, email, message }); 
 
             if (name && email && message) {
-                // If form is filled, show success message
-                formMessage.style.display = 'block'; // Show the success message
-                
-                console.log("Form is complete, success message displayed!"); // Debug success
+                formMessage.style.display = 'block'; 
+
+                console.log("Form is complete, success message displayed!"); 
             
             } else {
                 alert("Please fill in all fields.");

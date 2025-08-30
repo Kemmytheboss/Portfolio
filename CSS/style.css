@@ -94,6 +94,8 @@ button {
     padding: 10px 15px;
     border-radius: 4px;
     cursor: pointer;
+    width: 30%;
+    margin-left: 30%;
 }
 
 #formMessage {
