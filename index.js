@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const contactForm = document.querySelector("#contactForm");
     const formMessage = document.querySelector("#formMessage");
 
+    console.log(contactForm, formMessage);
+
     if (toggleButton) {
         toggleButton.addEventListener("click", function () {
             console.log("Toggle clicked");
@@ -23,9 +25,14 @@ document.addEventListener("DOMContentLoaded", function () {
             const email = document.querySelector("#email").value;
             const message = document.querySelector("#message").value;
 
+            console.log("Form submitted:", { name, email, message }); 
+
             if (name && email && message) {
                 // If form is filled, show success message
                 formMessage.style.display = 'block'; // Show the success message
+                
+                console.log("Form is complete, success message displayed!"); // Debug success
+            
             } else {
                 alert("Please fill in all fields.");
             }
