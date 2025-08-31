@@ -38,11 +38,16 @@ footer {
   text-decoration: underline;
 }
 
-body.dark-mode {
-  background-color: #671515;
-  color: #ffffff;
-
+body.light-theme {
+    background-color: #def6e1;
+    color: black;
 }
+
+body.dark-theme {
+    background-color: #121212;
+    color: #f2f2f2;
+}
+
 
 .inline-container {
   display: flex;
@@ -55,27 +60,6 @@ body.dark-mode {
   max-width: 600px; 
   height: auto;
   border-radius: 100%;
-}
-
-.contact-container {
-  max-width: 600px;
-  padding: 20px;
-  margin-left: 0 auto;
-  background-color: #def6e1;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px #0000001a;
-}
-
-#contactForm {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-input, textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
 }
 
 button {
@@ -148,12 +132,3 @@ button {
     display: flex;
 }
 
-body.light-theme {
-    background-color: white;
-    color: black;
-}
-
-body.dark-theme {
-    background-color: #121212;
-    color: #f2f2f2;
-}
