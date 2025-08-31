@@ -65,8 +65,9 @@ button {
 /* about section styling */
 .inline-container {
   display: flex;
-  align-items: center; 
-  margin-right: 30%;
+  align-items: flex-start; 
+  margin: 20px;
+  gap:20px;
 }
 
 .inline-container img {
@@ -74,6 +75,29 @@ button {
   max-width: 600px; 
   height: auto;
   border-radius: 100%;
+  flex-shrink: 0;
+}
+
+.about-text {
+  max-width: 600px;
+}
+/* Responsive layut for mobile */
+@media (max-width: 768px) {
+  .inline-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .inline-container img {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .about-text {
+    max-width: 100%;
+    padding: 0 15px;
+  }
 }
 
 /* contact styling */
