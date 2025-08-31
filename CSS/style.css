@@ -81,7 +81,7 @@ button {
 .about-text {
   max-width: 600px;
 }
-/* Responsive layut for mobile */
+/* Responsive layout for mobile */
 @media (max-width: 768px) {
   .inline-container {
     flex-direction: column;
@@ -91,7 +91,6 @@ button {
 
   .inline-container img {
     width: 80%;
-    max-width: 300px;
   }
 
   .about-text {

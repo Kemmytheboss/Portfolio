@@ -10,3 +10,4 @@ Add event listener
 Have hero section
 Add styling to every section
 Make sure the page is responsive
+Make the sections overlay
