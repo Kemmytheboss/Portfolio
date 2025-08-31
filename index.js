@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
     const themeToggle = document.querySelector("#themeToggle");
-    const contactForm = document.querySelector("#contactForm");
     const formMessage = document.querySelector("#formMessage");
     const closeBtn = document.querySelector(".close-btn");
     
